@@ -13,6 +13,23 @@ public class Ordered {
 		int y = ap.nextInt("Value for y?");
 		int z = ap.nextInt("Value for z?");
 
+
+		boolean xascending = x < y && x < z;
+		boolean yascending = y < z;
+
+		boolean xdescending = x > y && x > z;
+		boolean ydescending = y > z;
+
+		boolean isOrdered = (xascending && yascending) || (xdescending && ydescending);
+		System.out.println(isOrdered);
+
+
+
+
+
+
+
+
 	}
 
 }
